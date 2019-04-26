@@ -1,0 +1,27 @@
+<idea-plugin>
+    <id>qianyue.first_plugin</id>
+    <name>Qianyue</name>
+    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+
+    <description>
+        这是一个个人开发的插件,从一个最简单的hello开始,
+        会逐渐开发更多的功能, 在开发中不断学习插件开发知识
+    </description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="hello" class="com.qianyue.first.HelloAction" text="哈喽" description="哈喽action">
+            <add-to-group group-id="CodeMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
